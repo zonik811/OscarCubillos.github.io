@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/estilo_triqui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../vista/logica.js" ></script>
+
+<title>Triqui - Jugador 1</title>
+</head>
+<body> 
+    <form>
+    	<input type="hidden" id="turno" value="1" />
+        <input type="hidden" id="posicion_1" value="0" />
+        <input type="hidden" id="posicion_2" value="0" />
+        <input type="hidden" id="posicion_3" value="0" />
+        <input type="hidden" id="posicion_4" value="0" />
+        <input type="hidden" id="posicion_5" value="0" />
+        <input type="hidden" id="posicion_6" value="0" />
+        <input type="hidden" id="posicion_7" value="0" />
+        <input type="hidden" id="posicion_8" value="0" />
+        <input type="hidden" id="posicion_9" value="0" />
+		<!--Validadores del final del juego -->
+        <input type="hidden" id="juego_terminado" value="0" />
+        <input type="hidden" id="victorias_j1" value="0" />
+        <input type="hidden" id="victorias_j2" value="0" />
+        <input type="hidden" id="empates" value="0" />
+        <div align="center">
+   		<!--Valida el turno -->
+		<table align="center" border="1" style="padding:5px;">
+        	<tr>
+            	<td colspan="3" align="center" style="border:0px;">
+                	<label class="texto">Turno</label>
+            		<div id="turno_jugador">
+                    		<img src="../images/o.jpg" width="100" height="100" />
+                    </div>
+                </td>
+            </tr>
+			<!--------------------------------------------------------------- Principio Primera Fila ------------------------------------------------------------------------------>
+        	<tr>
+			<!--------------------------------------------------------------- Celda 1 ------------------------------------------------------------------------------>
+            	<td class="tablero">	
+                		<div id="imagen_1">
+					<!-- Celda 1-->
+	                        <img src="../images/blanco.png" width="100" height="100" id="1" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Celda 2 ------------------------------------------------------------------------------>
+                <td class="tablero">
+                		<div id="imagen_2">
+						<img src="../images/blanco.png" width="100" height="100" id="2" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Celda 3 ------------------------------------------------------------------------------>
+                <td class="tablero">
+                		<div id="imagen_3">
+	                    <img src="../images/blanco.png" width="100" height="100" id="3" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Final Primera Fila ------------------------------------------------------------------------------>	
+            </tr>
+			<!--------------------------------------------------------------- Principio Segunda Fila ------------------------------------------------------------------------------>
+            <tr>
+			<!--------------------------------------------------------------- Celda 4 ------------------------------------------------------------------------------>
+            	<td class="tablero">
+                		<div id="imagen_4">
+	                    <img src="../images/blanco.png" width="100" height="100" id="4" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+		    <!--------------------------------------------------------------- Celda 5 ------------------------------------------------------------------------------>
+                <td  class="tablero">
+                		<div id="imagen_5">
+	                    <img src="../images/blanco.png" width="100" height="100" id="5" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Celda 6 ------------------------------------------------------------------------------>	
+                <td  class="tablero">
+                		<div id="imagen_6">
+	                    <img src="../images/blanco.png" width="100" height="100" id="6" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Final Segunda Fila ------------------------------------------------------------------------------>
+            </tr> 
+			<!--------------------------------------------------------------- Principio Tercera Fila ------------------------------------------------------------------------------>
+            <!--------------------------------------------------------------- Celda 7 ------------------------------------------------------------------------------>			
+            <tr>
+            	<td class="tablero">
+                		<div id="imagen_7">
+						<img src="../images/blanco.png" width="100" height="100" id="7" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Celda 8 ------------------------------------------------------------------------------>
+                <td class="tablero">
+                		<div id="imagen_8">
+						<img src="../images/blanco.png" width="100" height="100" id="8" onclick="jugar(this.id);" />
+                        </div>                    	
+                </td>
+			<!--------------------------------------------------------------- Celda 9 ------------------------------------------------------------------------------>
+                <td class="tablero">
+                		<div id="imagen_9">
+						<img src="../images/blanco.png" width="100" height="100" id="9" onclick="jugar(this.id);" />
+						</div>                    	
+                </td>
+			<!--------------------------------------------------------------- Final Tercera Fila ------------------------------------------------------------------------------>
+            </tr>
+			<!--------------------------------------------------------------- Final Del tablero ------------------------------------------------------------------------------>
+            <tr>
+			
+            	<td colspan="3" align="center" style="border:0px;">
+                	<input class="boton" type="button" id="juego_nuevo" onclick="juegoNuevo();"  value="Juego Nuevo" />
+                 
+            	</td>
+            </tr>
+        </table>
+    
+        </div>
+    </form>    
+</body>
+</html>
